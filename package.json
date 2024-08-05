@@ -1,0 +1,67 @@
+{
+    "name": "gupo-release-it",
+    "version": "0.1.0",
+    "description": "CLI工具,用于进行项目版本发布.",
+    "keywords": [],
+    "bin": {
+        "release-it": "bin/release-it.js"
+    },
+    "type": "module",
+    "exports": {
+        ".": "./lib/index.js",
+        "./package.json": "./package.json"
+    },
+    "files": [
+        "bin",
+        "config",
+        "lib"
+    ],
+    "scripts": {
+        "release": "./bin/release-it.js"
+    },
+    "author": {
+        "email": "yes.ccx@gmail.com",
+        "name": "Yesccx"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "@iarna/toml": "2.2.5",
+        "@octokit/rest": "19.0.13",
+        "async-retry": "1.3.3",
+        "chalk": "5.3.0",
+        "cosmiconfig": "8.3.6",
+        "dotenv": "^16.4.5",
+        "execa": "7.2.0",
+        "git-url-parse": "13.1.0",
+        "globby": "13.2.2",
+        "inquirer": "9.2.11",
+        "is-ci": "3.0.1",
+        "lodash": "4.17.21",
+        "mime-types": "2.1.35",
+        "node-fetch": "3.3.2",
+        "open": "9.1.0",
+        "ora": "7.0.1",
+        "os-name": "5.1.0",
+        "promise.allsettled": "1.0.7",
+        "semver": "7.5.4",
+        "shelljs": "0.8.5",
+        "url-join": "5.0.0",
+        "wildcard-match": "5.1.2",
+        "yargs-parser": "21.1.1"
+    },
+    "devDependencies": {
+        "@octokit/request-error": "3.0.3",
+        "eslint": "8.50.0",
+        "eslint-config-prettier": "9.0.0",
+        "eslint-plugin-import": "2.28.1",
+        "eslint-plugin-prettier": "5.0.0",
+        "fs-monkey": "1.0.5",
+        "knip": "2.29.0",
+        "prettier": "3.0.3",
+        "remark-cli": "11.0.0",
+        "strip-ansi": "7.1.0"
+    },
+    "engines": {
+        "node": ">=16"
+    }
+}

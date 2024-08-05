@@ -1,0 +1,22 @@
+{
+    "hooks": {},
+    "git": {
+        "tagAnnotation": "Release ${version}",
+        "tagArgs": [],
+        "pushArgs": []
+    },
+    "pipe_builder_url_template": "构建流水线: https://flow.aliyun.com/pipelines/${pipe_num}/current",
+    "pipe_deploy_url_template": "部署流水线: https://flow.aliyun.com/pipelines/${pipe_num}/current",
+    "environments": [
+        {
+            "enabled": true,
+            "name": "example",
+            "alias": "example",
+            "regex": "example--v(.+)",
+            "options": {
+                "builder_pipe_num": 1,
+                "deploy_pipe_num": 1
+            }
+        }
+    ]
+}
